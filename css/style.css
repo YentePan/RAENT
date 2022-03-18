@@ -1,0 +1,762 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE!! */
+:root {
+    --darkGrey: #262626;
+    --tabGrey: #363636;
+    --iconGrey: #707070;
+    --lightGrey: #AEAEAE;
+    --richRed: #D11818;
+    --font-stack: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--darkGrey);
+    width: 100%; 
+}
+
+html {
+    width: 100%; 
+}
+
+#btnEnableNotifications {
+    position: relative;
+    display: block;
+}
+
+.melding {
+    width: 50px;
+    height: 50px;
+}
+
+.notifications {
+    height: 50px;
+    width: 80%;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    color: var(--richRed);
+    background-color: var(--lightGrey);
+    align-content: center;
+}
+
+/* SCREEN */
+h1, h2, h3, h4, p, a, button{
+    font-family: var(--font-stack);
+    color: white;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+h2 {
+    min-width: 125.75px;
+    font-size: 0.8em;
+    color: var(--lightGrey);
+}
+
+h3 {
+    font-size: 0.8em;
+    color: white;
+}
+
+.textplaatsen {
+    color: var(--lightGrey);
+    padding-left: 15px;
+}
+
+.textpost {
+    font-size: 1em;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+a {
+    display: block;
+    position: relative;
+    text-decoration: none;  
+    font-size: 1.5em;
+}
+
+a:hover {
+    color: white;
+    display: block;
+    font-size: 1.5em;
+    position: relative;
+}
+
+/* Menu */
+    .fixed-bottom{
+        display: none;
+    }
+    
+    header {
+        width: 100%;
+        margin: auto;
+    }
+    .navbar ul, li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .navbar {
+        align-content: center;
+        background-color: var(--richRed);
+        width: 100%;
+        height: 60px;
+        position: fixed;
+    }
+
+    .wrappernav  {
+        background-color: #262626;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        padding: 0 10% 0 10%;
+        margin: 60px auto auto auto;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .wrapper {
+        padding-top: 132px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col {
+        padding: 24px;
+        padding-bottom: 24px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .flex {
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+
+    .d-flex {
+        padding-left: 12px;
+        padding-right: 0px; 
+    }
+
+    .d-flex2 {
+        padding-left: 0px;
+        padding-right: 0px; 
+        display: flex!important;
+        align-items: center;
+    }
+
+    ul {
+        display: inline;
+    }
+
+    #recent, #volgend, #populair {
+        scroll-margin-top: 210px;
+    }
+    
+    #volgend, #populair, #plus {
+        display: none;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+
+    .center {
+        align-self: center;
+        text-align: center;
+    }
+
+    .ralign {
+        text-align: right;
+    }
+
+    .icon {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+/* Plusje tab camera */
+.wrapperplusnav {
+    background-color: #262626;
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    margin-top: 60px;
+    align-items: center;
+    height: 72px;
+    z-index: 10;
+}
+
+.midcenter {
+    width: 100%;
+    margin: auto;
+}
+
+.terug {
+    width: 20%;
+    position: absolute;
+}
+
+#terugknop {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    margin-left: 2%;
+}
+
+.iconterug {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.plusbackground {
+    position: absolute;
+    background: var(--darkGrey);
+    height: 1160px;
+    width: 100%;
+    z-index: 9;
+}
+
+.pluswrapper {
+    margin-top: 25px;
+}
+
+.pluscontainer {
+    background-color: var(--tabGrey);
+    height: 180px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.tekstboxplus {
+    display: flex;
+    align-items: center;
+    padding: 16px 0 0 10px;
+}
+
+.optiebox {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+}
+
+.fotobtn {   
+    height: 25px;
+    width: 132px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--richRed);
+    align-content: center;
+}
+
+
+#plaatsbtn {   
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    color: var(--richRed);
+    font-size: 1em;
+    background-color: var(--lightGrey);
+    align-content: center;
+}
+
+#imgbox, #imgboxpicker {
+    width: 49%;
+    height: 100%;
+}
+
+.wrapperfotos {
+    justify-content: space-around;
+    position: relative;
+    align-items: flex-start;
+    margin-top: 20px;
+    max-height: 250px;
+}
+
+#pickImage, .imgbox, #divSelfie {
+    display: none;
+    margin-top: 28px;
+    margin-bottom: 80px;
+}
+
+#player {
+    width: 100%;;
+}
+
+#captureBtn {
+    display: none;
+}
+
+.btnplusimg {
+    width: 15px;
+    height: 15px;
+}
+
+.inhoudbutton {
+    margin-top: 7px;
+}
+
+#selfieBtn, #pickImgBtn {
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1em;
+    background-color: var(--lightGrey);
+    align-items: center;
+}
+
+/* Posts */
+    .pf{
+        width: 40px;
+        height: 40px;
+        clip-path: circle();
+    }
+
+    .p5l {
+        padding-left: 5px;
+    }
+
+    .p10l {
+        padding-left: 5px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .categorie {
+        display: flex;
+        align-items: center;
+    }
+
+    .post{
+        padding-left: 20px;
+        
+    }
+
+    /* Originele foto = 500 x 350
+        Aspect ratio als percentage moeten we hebben voor height
+        350 (height) / 275 (width) = 1.27 = 127%
+    */
+    .imgpleister {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/pleister.jpg");
+        background-size: cover;
+    }
+
+    .imgpenleeg {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/penleeg.jpeg");
+        background-size: cover;
+    }
+
+    .imgwindowscrash {
+        width: 100%; 
+        padding-top: 55%;
+        max-width: 500px;
+        background-image: url("../img/posts/WindowsCrash.jpeg");
+        background-size: cover;
+    }
+
+    .imgbus {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/bus.jpeg");
+        background-size: cover;
+    }
+
+    .imgrommel {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/Rommel.jpeg");
+        background-size: cover;
+    }
+
+    .imghallygally {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/HallyGally.jpg");
+        background-size: cover;
+    }
+
+    .imgfruitella {
+        width: 100%; 
+        padding-top: 55%;
+        max-width: 500px;
+        background-image: url("../img/posts/Fruitella.jpeg");
+        background-size: cover;
+    }
+
+    .imgshangchi {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/LegendOfSixRings.jpeg");
+        background-size: cover;
+    }
+
+    .imgfiets {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/Fietsparkeren.jpeg");
+        background-size: cover;
+    }
+
+    .imgsteengeld {
+        width: 100%; 
+        padding-top: 127%;
+        max-width: 500px;
+        background-image: url("../img/posts/steenGeld.jpeg");
+        background-size: cover;
+    }
+
+    .bar {
+        display: flex;
+        width: 100%;
+        padding-top: 127%;
+        padding-top: 10px;
+        max-width: 500px;   
+        margin-bottom: 20px;
+    }
+
+    
+    .barspace{
+        /* margin-right: 3rem; */
+        margin-right: 18%;
+        height: 25px;
+    }
+
+    .barspace2{
+        margin: 0px 20px 0 0px;
+    }
+
+    .barspace3 {
+        margin-right: 8%;
+        height: 25px;
+    }
+
+    .icons {
+        width: 14px;
+        height: 14px;
+    }
+
+    .driehoekup_grey{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/driekhoekUp_grey.png");
+        background-size: cover;
+    }
+
+    .driehoekup_red{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/driekhoekUp_red.png");
+        background-size: cover;
+    }
+
+    .driehoekdown_grey{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/driehoekDown_grey.png");
+        background-size: cover;
+    }
+
+    .driehoekdown_fullgrey{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/driehoekDown_Fullgrey.png");
+        background-size: cover;
+    }
+
+    .numberpost {
+        position: absolute;
+        margin-top: 6px;
+        margin-left: 2rem;
+        font-size: 0.8em;
+        
+    }
+
+    .comment_grey {
+        width: 25px;
+        height: 25px;
+        background-image: url("../img/icons/comment_grey.png");
+        background-size: cover;
+    }
+    
+    .raentlogo_grey{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/raentlogo_darkgrey.png");
+        background-size: cover;
+    }
+
+    .raentlogo_red{
+        padding-top: 100%;
+        width: 25px;
+        background-image: url("../img/icons/raentlogo_red.png");
+        background-size: cover;
+    }
+
+    .delen_grey {
+        width: 25px;
+        background-image: url("../img/icons/delen_grey.png");
+        background-size: cover;
+    }
+
+/* suggestietab */
+    .suggestionscontainer {
+        display: none;
+    }
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+    #terugknop {
+        display: block;
+    }
+
+    .wrappernav, .wrapperplusnav, .pluswrapper {
+        padding: 0 20% 0 20%;
+    }
+
+    .bar {
+        margin-bottom: 0px;
+    }
+
+    .line {
+        height: 1px;
+        background: var(--lightGrey);
+        margin: 20px 0 20px 0;
+    }
+
+    #recent, #volgend, #populair  {
+        position: relative;
+        border: 1px solid var(--lightGrey);
+        width: 60%;
+        max-width: 564px;
+        padding: 20px 40px 20px 20px;
+    }
+
+    .space {
+        height: 80px;
+    }
+
+
+
+
+
+/* suggestietab */
+    .suggestionscontainer {
+        position: fixed;
+        display: block;
+        margin-left: 48%;
+        width: 437px;
+    }
+
+    .kopsug {
+        padding-bottom: 10px;
+    }
+    .volgbutton {
+        margin-left: 25px;
+        height: 25px;
+        width: 100px;
+        border: none;
+        border-radius: 25px;
+        color: var(--richRed);
+        background-color: var(--lightGrey);
+        align-content: center;
+    }
+
+    .volgendbutton {
+        margin-left: 25px;
+        height: 25px;
+        width: 100px;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        background-color: var(--richRed);
+        align-content: center;
+    }
+
+    .trendtext {
+        margin-top: 1em;
+    }
+
+    #community, #trends {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        padding: 15px;
+        background-color: var(--tabGrey);
+        height: 180px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+
+    .pfTab{
+        width: 25px;
+        height: 25px;
+        clip-path: circle();
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1280px) {
+    .fixed-bottom{
+        display: block;
+        height: 60px;
+    }
+
+    .wrapper {
+        width: 1000px;
+    }
+
+    .pluswrapper {
+        width: 1000px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .fixed-top{
+        display: none;
+    }
+    
+    .suggestionscontainer {
+        margin-left: 660px;
+    }
+    
+    #community, #trends {
+        margin-left: 2em;
+    }
+
+    .wrappernav, .wrapperplusnav{
+        padding: 0 35% 0 35%;
+        margin: 0 auto;
+    }
+} 

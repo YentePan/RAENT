@@ -1,0 +1,42 @@
+{
+    "name": "RAENT",
+    "short_name": "RAENT",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#262626",
+    "description": "RAENT is een app waarop je al je frustraties kan delen.",
+    "dir": "ltr",
+    "categories": "entertainment,lifestyle",
+    "lang": "nl",
+    "orientation": "any",
+    "scope": ".",
+    "theme_color": "#d11818",
+    "icons": [
+         {
+          "src": "img/icon/favicon.ico",
+          "sizes": "16x16",
+          "type": "image/ico"
+         },
+
+         {
+          "src": "img/icon/icon-48x48.png",
+          "sizes": "48x48",
+          "type": "image/png"
+         },
+         {
+          "src": "img/icon/icon-128x128.png",
+          "sizes": "128x128",
+          "type": "image/png"
+         },
+         {
+          "src": "img/icon/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+         },
+         {
+          "src": "img/icon/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+         }
+        ]
+       }
